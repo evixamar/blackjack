@@ -1,12 +1,151 @@
-:root {
-  font: 16px / 1 sans-serif;
-}
-
 html {
-  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', 'sans-serif';
+  text-rendering: optimizeLegibility;
+  font-weight: 200;
+  font-size: 20px;
+  color: #478f67;
 }
 
 body {
-  margin: 0;
-  min-height: 100%;
+  background-color: #2b6b39;
+}
+
+h2 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#container {
+  background-color: #203b30;
+  margin: 1em;
+  padding: 1%;
+  width: 60%;
+  margin-left: 25%;
+}
+
+.images {
+  background-color: #a2bff0, #558be3, #558be3, #a2bff0;
+  padding: 1%;
+}
+
+#playercards {
+  margin: 0 auto;
+  padding: 0.5%;
+  background-color: #791c24;
+  height: 125px;
+}
+
+#dealercards {
+  margin: 0 auto;
+  padding: 1%;
+  background-color: #062c09;
+  height: 125px;
+}
+
+.dealreset {
+  display: block;
+  text-align: center;
+}
+
+button.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#dealBtn,
+#resetBtn {
+  width: 15%;
+  height: 10%;
+  display: inline-block;
+  position: relative;
+  margin: 1% 30%;
+  border-radius: 20px 2px;
+  overflow-wrap: break-word; /* when text-overflows break the letters and wrap in new-lines */
+}
+
+.hitstand {
+  display: block;
+  text-align: center;
+}
+
+#hitBtn,
+#standBtn {
+  width: 15%;
+  height: 10%;
+  display: inline-block;
+  margin: 0.5% 15%;
+  position: relative;
+  border-radius: 1% 2%;
+  overflow-x: hidden; /* hide text that overflows in x-axis */
+  text-overflow: ellipsis; /* add ... in button to show that some text is there */
+}
+
+input[type='text'] {
+  border-radius: 5%;
+}
+
+.sumdisplay {
+  display: block;
+  text-align: center;
+}
+
+#playersum,
+#dealersum {
+  display: block;
+  margin: 1% auto;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  padding: 1px;
+  max-width: 100%;
+}
+
+#show {
+  margin-top: 1%;
+  text-align: left;
+  display: inline-block;
+}
+
+#resultbox {
+  display: inline-block;
+  max-width: 85%;
+  font-size: 15px;
+  font-weight: bold;
+  color: #709777;
+}
+
+#counter {
+  display: inline-block;
+  margin-top: 1%;
+  text-align: center;
+}
+
+#winscounter {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  max-width: 10%;
+  border: solid;
+  border-radius: 20%;
+  padding: 1px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  font-family: Impact;
+  position: relative;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover,
+a:visited {
+  color: rgb(126, 73, 60);
 }
